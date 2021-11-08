@@ -12,7 +12,7 @@ import { SimilarityResponse } from 'src/app/_models/similarityresponse';
 })
 export class SimilaritydemoComponent implements OnInit {
 
-  private backendurl: string = "http://projectpagebackend.hopto.org/similarity";
+  private backendurl: string = "https://projectpagebackend.hopto.org/similarity";
   dataForm: FormGroup;
   response: number = -1;
   responsesuccess: boolean = false;
