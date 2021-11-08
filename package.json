@@ -1,6 +1,5 @@
 {
   "name": "client",
-  "homepage": "https://johnguo149.github.io/ProjectPage",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
