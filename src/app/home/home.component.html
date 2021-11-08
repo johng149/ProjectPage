@@ -1,0 +1,52 @@
+<body>
+    <div>    
+        <form fxLayout="column" name="search" [formGroup]="searchForm">
+            <mat-form-field class="searchbar" appearance="fill">
+                <mat-label>Search</mat-label>
+                <input matInput type="text" (input)="search()" formControlName="textsearch">
+            </mat-form-field>
+            <mat-form-field class="searchbartags" appearance="fill">
+                <mat-chip-list #tagList>
+                    <mat-chip 
+                    *ngFor="let tag of tags"
+                    [selectable]="selectable"
+                    [removable]="removable"
+                    (removed)="removeTag(tag)">
+                    {{tag}}
+                    <button matChipRemove *ngIf="removable">
+                        <mat-icon>cancel</mat-icon>
+                    </button>
+                    </mat-chip>
+                    <input 
+                    #tagInput
+                    placeholder="Enter tag name"
+                    style="font-size: 15px;"
+                    formControlName="tagsearch"
+                    [matChipInputSeparatorKeyCodes]="separators"
+                    [matChipInputFor]="tagList"
+                    [matAutocomplete]="auto"
+                    (matChipInputTokenEnd)="addTag($event)">
+                </mat-chip-list>
+                <mat-autocomplete #auto="matAutocomplete" (optionSelected)="tagAutoCompleteSelect($event)">
+                    <mat-option *ngFor="let filteredTag of filteredOptions$ | async" [value]="filteredTag">
+                        {{filteredTag}}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+        </form>
+    </div>
+    <div>
+        <div fxLayout="row wrap" fxLayoutGap="16px grid">
+            <div 
+            fxFlex="33%"
+            fxFlex.xs="100%"
+            fxFlex.sm="50%"
+            *ngFor="let project of projects">
+                <app-card [project]="project" (tagSearch)="addTag($event)"></app-card>
+            </div>
+        </div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center center">
+        <p *ngIf="projects.length == 0">No Results Found</p>
+    </div>
+</body>

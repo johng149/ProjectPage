@@ -1,0 +1,8 @@
+.searchbar, .searchbartags{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.searchbartags{
+    font-size: 2px;
+}

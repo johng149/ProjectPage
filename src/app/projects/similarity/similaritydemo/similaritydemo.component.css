@@ -1,0 +1,8 @@
+
+.buttoncontainer, .responsecontainer{
+    display: flex;
+}
+
+.buttonwrap, .responsewrap{
+    margin: auto;
+}

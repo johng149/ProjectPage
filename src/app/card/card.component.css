@@ -1,0 +1,12 @@
+.project-card {
+    max-width: 400px;
+}
+
+.project-image, .project-image-padding{
+    object-fit: contain;
+    height: 200px;
+}
+
+.project-image-padding{
+    margin-top: 40px;
+}

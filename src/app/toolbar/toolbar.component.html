@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="routeHome()">
+        <mat-icon>home</mat-icon>
+    </button>
+    <div class="title">{{this.title}}</div>
+    <span class="spacer"></span>
+    <button mat-button (click)="routeAboutMe()" *ngIf="title != 'About Me'">
+        About Me
+    </button>
+    <button mat-icon-button (click)="routeSocial('https://www.linkedin.com/in/john-g-8b7088186/')">
+        <mat-icon svgIcon="social_linkedin"></mat-icon>
+    </button>
+</mat-toolbar>

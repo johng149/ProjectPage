@@ -1,0 +1,13 @@
+{
+    "projects": [
+        {
+            "title": "Similarity Classification",
+            "subtitle": "Determines how similar the meaning of two sentences are",
+            "image": "/assets/images/generic/tensorflow.jpg",
+            "imagedesc": "Tensorflow Icon",
+            "desc": "Using Huggingface BERT model and Tensorflow, along with datasets from sources such as Stanford NLP, this model determines the similarity of the meaning of two given English sentences. The training code uses Python.",
+            "tags": ["Tensorflow","Python","Huggingface"],
+            "route": "similarity"
+        }
+    ]
+}
