@@ -25,7 +25,7 @@ export class ToolbarComponent implements OnInit, OnDestroy {
     });
     this.iconreg.addSvgIcon(
       "social_linkedin",
-      this.domsanitizer.bypassSecurityTrustResourceUrl("/assets/images/icons/linkedin.svg")
+      this.domsanitizer.bypassSecurityTrustResourceUrl("./assets/images/icons/linkedin.svg")
     );
   }
   ngOnDestroy(): void {
