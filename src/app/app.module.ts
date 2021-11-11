@@ -16,6 +16,7 @@ import { CardComponent } from './card/card.component';
 import { AboutComponent } from './about/about.component';
 import { SimilarityComponent } from './projects/similarity/similarity.component';
 import { SimilaritydemoComponent } from './projects/similarity/similaritydemo/similaritydemo.component';
+import { GanComponent } from './projects/gan/gan.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SimilaritydemoComponent } from './projects/similarity/similaritydemo/si
     CardComponent,
     AboutComponent,
     SimilarityComponent,
-    SimilaritydemoComponent
+    SimilaritydemoComponent,
+    GanComponent
   ],
   imports: [
     BrowserModule,

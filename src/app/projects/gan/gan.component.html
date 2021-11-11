@@ -1,0 +1,41 @@
+<div fxLayout="column" class="centercontent">
+    <div>
+        <img 
+        src="./assets/images/project/gan/gantrain0.gif" 
+        alt="GAN Training GIF"
+        *ngIf="showmontage">
+    </div>
+    <div fxFlex="50%">
+        <button 
+        mat-raised-button 
+        *ngIf="!showmontage"
+        (click)="showmontage = true">
+            Show Training Montage
+        </button>
+    </div>
+    <div fxFlex="50%">
+        <button 
+        mat-raised-button 
+        *ngIf="showmontage"
+        (click)="showmontage = false">
+            Hide Training Montage
+        </button>
+    </div>
+</div>
+<div class="container">
+    <h3 class="centercontent">
+        Training Montage shows the AI gradually learning how to draw numbers
+    </h3>
+    <p>
+        The model starts out producing random noise, but starts to understand
+        how to draw numbers after a few iterations. <br>
+        By the end of the montage, the model is starting to produce smudges that
+        vaguely resemble numbers.
+    </p>
+    <p>
+        However, it appears the training loop is not perfect. <br>
+        Occasionally in the montage, the AI devolves back into creating
+        random noise for a moment. This suggests an exploding gradient during
+        training.
+    </p>
+</div>
