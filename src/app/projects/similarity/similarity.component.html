@@ -4,7 +4,7 @@
         Determine if two sentences contradict
         each other using the power of artificial intelligence! 🤖
     </h3>
-    <p class="centercontent">
+    <p>
         After you enter two sentences and press the arrow, 
         we send a request to a server running in the cloud. <br>
         This server loads the tokenizer needed to parse the 
@@ -16,8 +16,11 @@
                                     >🤗 Transformers</a> ALBERT
         with a custom classification layer I made attached to it. <br>
         The model was trained using datasets from sources such as Stanford
-        NLP
-    
-
+        NLP.
+    </p>
+    <p>
+        This model as a few quirks, for example, if the first sentence is
+        "To be or not to be, that is the question" then it thinks that 
+        "Not to be is an answer to that question" is a contradiction
     </p>
 </div>

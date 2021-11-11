@@ -6,3 +6,7 @@
 .buttonwrap, .responsewrap{
     margin: auto;
 }
+
+.showexamplebutton {
+    margin: 10px;
+}

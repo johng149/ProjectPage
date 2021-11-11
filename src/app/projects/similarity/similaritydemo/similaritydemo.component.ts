@@ -5,6 +5,7 @@ import { ProjectsDataService } from 'src/app/_services/projectsdata.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { SimilarityResponse } from 'src/app/_models/similarityresponse';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { ExamplesService } from 'src/app/_services/examples.service';
 
 @Component({
   selector: 'app-similaritydemo',
@@ -25,12 +26,22 @@ export class SimilaritydemoComponent implements OnInit {
   constructor(private http: HttpClient,
     private projectsService: ProjectsDataService,
     private fb: FormBuilder,
-    private snack: MatSnackBar) {
+    private snack: MatSnackBar,
+    private examples: ExamplesService) {
     this.dataForm = this.fb.group({sent1: this.sent1,
                                    sent2: this.sent2}) 
   }
 
   ngOnInit(): void {
+  }
+
+  showExample(){
+    let e = this.examples.getExample();
+    let s1 = e.sentence1;
+    let s2 = e.sentence2;
+    this.sent1.setValue(s1);
+    this.sent2.setValue(s2);
+    this.process();
   }
 
   errorMessage(){
