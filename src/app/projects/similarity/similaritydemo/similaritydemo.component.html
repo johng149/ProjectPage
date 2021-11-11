@@ -27,7 +27,7 @@
             </div>
         </div>
         <div fxFlex="100%" class="responsecontainer">
-            <mat-card *ngIf="response >= 0" class="responsewrap">
+            <mat-card *ngIf="response >= 0 && !loading" class="responsewrap">
                 <mat-card-title>
                     Result: {{roundedResult()}}%
                 </mat-card-title>
@@ -38,11 +38,14 @@
                     The AI believes that the two sentences contradict each other
                 </mat-card-content>
             </mat-card>
-            <mat-card *ngIf="response <= 0" class="responsewrap">
+            <mat-card *ngIf="response <= 0 && !loading" class="responsewrap">
                 <mat-card-title>
                     Please submit input
                 </mat-card-title>
             </mat-card>
+            <mat-progress-spinner *ngIf="loading"
+             mode="indeterminate"
+             class="responsewrap"></mat-progress-spinner>
         </div>
     </div>
 </div>
