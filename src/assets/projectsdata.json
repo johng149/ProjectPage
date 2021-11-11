@@ -8,6 +8,15 @@
             "desc": "Using Huggingface BERT model and Tensorflow, along with datasets from sources such as Stanford NLP, this model determines the similarity of the meaning of two given English sentences. The training code uses Python.",
             "tags": ["Tensorflow","Python","Huggingface"],
             "route": "similarity"
+        },
+        {
+            "title": "MNIST GAN",
+            "subtitle": "First attempt at creating model that can learn how to draw numbers",
+            "image": "./assets/images/project/gan/featured.png",
+            "imagedesc": "AI's Attempt At Drawing the Number 9",
+            "desc": "Using Tensorflow, an AI model consisting of a discriminator and generator competed against each other. This process allowed the generator to create images that could trick the discriminator model.",
+            "tags": ["Tensorflow", "Python"],
+            "route": "gan"
         }
     ]
 }
