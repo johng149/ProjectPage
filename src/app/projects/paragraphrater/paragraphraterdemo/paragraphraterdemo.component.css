@@ -1,0 +1,11 @@
+.buttoncontainer, .responsecontainer{
+    display: flex;
+}
+
+.buttonwrap, .responsewrap{
+    margin: auto;
+}
+
+.showexamplebutton {
+    margin: 10px;
+}
