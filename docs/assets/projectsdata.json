@@ -5,7 +5,7 @@
             "subtitle": "Determines how similar the meaning of two sentences are",
             "image": "./assets/images/generic/tensorflow.jpg",
             "imagedesc": "Tensorflow Icon",
-            "desc": "Using Huggingface BERT model and Tensorflow, along with datasets from sources such as Stanford NLP, this model determines the similarity of the meaning of two given English sentences. The training code uses Python.",
+            "desc": "Using Huggingface ALBERT model and Tensorflow, along with datasets from sources such as Stanford NLP, this model determines the similarity of the meaning of two given English sentences. The training code uses Python.",
             "tags": ["Tensorflow","Python","Huggingface"],
             "route": "similarity"
         },
@@ -17,6 +17,15 @@
             "desc": "Using Tensorflow, an AI model consisting of a discriminator and generator competed against each other. This process allowed the generator to create images that could trick the discriminator model.",
             "tags": ["Tensorflow", "Python"],
             "route": "gan"
+        },
+        {
+            "title": "Paragraph Rater",
+            "subtitle": "Determines similarity between given paragraph and the writing of other authors",
+            "image": "./assets/images/project/paragraphrater/oldbook.jpg",
+            "imagedesc": "Some Old Book",
+            "desc": "Huggingface ALBERT model trained using Tensorflow along with data from sources in public domain, such as Sherlock Holmes and Alice's Adventures in Wonderland. It uses randomly generated gibberish as negative examples.",
+            "tags": ["Tensorflow","Python","Huggingface"],
+            "route": "paragraphrater"
         }
     ]
 }
