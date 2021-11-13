@@ -6,12 +6,13 @@
     </button>
     <div fxLayout="row" fxLayoutGap="5px grid">
         <form  
+        fxLayout="column" 
         fxFlex="43%" 
         name="paragraphrater" 
         [formGroup]="dataForm">
             <mat-form-field appearance="fill">
                 <mat-label>Paragraph</mat-label>
-                <input matInput type="text" formControlName="paragraph" required>
+                <textarea matInput type="text" formControlName="paragraph" required></textarea>
                 <mat-error *ngIf="paragraph.invalid">{{errorMessage()}}</mat-error>
             </mat-form-field>
         </form>

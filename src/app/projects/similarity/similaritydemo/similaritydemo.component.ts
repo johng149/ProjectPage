@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { ProjectsDataService } from 'src/app/_services/projectsdata.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { SimilarityResponse } from 'src/app/_models/similarityresponse';
+import { ScoreResponse } from 'src/app/_models/similarityresponse';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ExamplesService } from 'src/app/_services/examples.service';
 
@@ -78,9 +78,9 @@ export class SimilaritydemoComponent implements OnInit {
     const invalid = this.invalidInputs();
     if(!invalid && !this.loading){
       this.loading = true;
-      this.http.post<SimilarityResponse>(this.backendurl,
+      this.http.post<ScoreResponse>(this.backendurl,
                     {"sentence1":this.sent1.value,
-                    "sentence2":this.sent2.value}).subscribe((result: SimilarityResponse) =>{
+                    "sentence2":this.sent2.value}).subscribe((result: ScoreResponse) =>{
                       this.response = result.score,
                       this.responsesuccess = result.success,
                       this.loading = false
