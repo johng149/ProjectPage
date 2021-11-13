@@ -2,7 +2,7 @@
 // similarity model demo examples
 // each example must have structure like
 // {"sentence1": "...", "sentence2": "..."}
-export var simexamples = [
+var simexamples = [
     {
         "sentence1": "It was the best of times and it was the worse of times",
         "sentence2": "It was a good time for some and a bad time for others"
@@ -40,5 +40,32 @@ export var simexamples = [
         "sentence2": "The more energy is needed, the more advanced the society"
     }];
 
+// paragraph rater model demo examples
+// each example must have structure like
+// {"paragraph": ...}
+var paragraphexamples = [
+    {
+        "paragraph": "“It is simplicity itself,” said he; “my eyes tell me that on the inside of your left shoe, just where the firelight strikes it, the leather is scored by six almost parallel cuts. Obviously they have been caused by someone who has very carelessly scraped round the edges of the sole in order to remove crusted mud from it."
+    },
+    {
+        "paragraph": "“My dear fellow,” said Sherlock Holmes as we sat on either side of the fire in his lodgings at Baker Street, “life is infinitely stranger than anything which the mind of man could invent. We would not dare to conceive the things which are really mere commonplaces of existence. If we could fly out of that window hand in hand, hover over this great city, gently remove the roofs, and peep in at the queer things which are going on, the strange coincidences, the plannings, the cross-purposes, the wonderful chains of events, working through generations, and leading to the most outré results, it would make all fiction with its conventionalities and foreseen conclusions most stale and unprofitable.”"
+    },
+    {
+        "paragraph": "Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door."
+    },
+    {
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "paragraph": "in principio creavit Deus caelum et terram"
+    },
+    {
+        "paragraph": "rand trial rand ran random ran ran ran random rand random rand random gold ran ra"
+    }
+]
+
 // dictionary of all examples, key is the route (look in projectsdata.json for route)
-export var allexamples: {[key: string]: Array<any>} = {"similarity": simexamples}
+export var allexamples: {[key: string]: Array<any>} = {
+                                                        "similarity": simexamples,
+                                                        "paragraphrater": paragraphexamples
+                                                        }

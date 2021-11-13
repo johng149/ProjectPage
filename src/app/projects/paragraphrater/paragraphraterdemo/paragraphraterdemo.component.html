@@ -5,20 +5,15 @@
         Show Me An Example
     </button>
     <div fxLayout="row" fxLayoutGap="5px grid">
-        <form 
+        <form  
         fxLayout="column" 
         fxFlex="43%" 
-        name="similarity" 
+        name="paragraphrater" 
         [formGroup]="dataForm">
             <mat-form-field appearance="fill">
-                <mat-label>Sentence 1</mat-label>
-                <input matInput type="text" formControlName="sent1" required>
-                <mat-error *ngIf="sent1.invalid">{{errorMessage()}}</mat-error>
-            </mat-form-field>
-            <mat-form-field appearance="fill">
-                <mat-label>Sentence 2</mat-label>
-                <input matInput type="text" formControlName="sent2" required>
-                <mat-error *ngIf="sent2.invalid">{{errorMessage()}}</mat-error>
+                <mat-label>Paragraph</mat-label>
+                <textarea matInput type="text" formControlName="paragraph" required></textarea>
+                <mat-error *ngIf="paragraph.invalid">{{errorMessage()}}</mat-error>
             </mat-form-field>
         </form>
         <div fxFlex="10%" class="buttoncontainer">
@@ -35,12 +30,6 @@
                 <mat-card-title>
                     Result: {{roundedResult()}}%
                 </mat-card-title>
-                <mat-card-content *ngIf="response > 0.5">
-                    The AI believes that the two sentences are consistent
-                </mat-card-content>
-                <mat-card-content *ngIf="response <= 0.5">
-                    The AI believes that the two sentences contradict each other
-                </mat-card-content>
             </mat-card>
             <mat-card *ngIf="response <= 0 && !loading" class="responsewrap">
                 <mat-card-title>
@@ -53,3 +42,4 @@
         </div>
     </div>
 </div>
+

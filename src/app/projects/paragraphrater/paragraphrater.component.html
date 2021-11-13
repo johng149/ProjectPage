@@ -1,0 +1,21 @@
+<app-paragraphraterdemo></app-paragraphraterdemo>
+<div class="container">
+    <h3 class="centercontent">
+        Determines if the paragraph given is written in fashion similar to certain classic authors' works
+    </h3>
+    <p>
+        The AI model that is providing the ratings has been trained on certain works such as some stories from
+        The Adventures of Sherlock Holmes. As negative examples, it was trained on randomly generated gibberish
+        and randomly scrambled sentences from various books in public domain. <br>
+        Currently, it only provides a rating and does not specify which author(s) it associates with the paragraph.
+        However, a low score in the 40% range typically indicates that the model does not associate the passage
+        with any author.
+    </p>
+    <p>
+        Despite the relatively large dataset the model has been trained on, it is still surprisingly brittle. <br>
+        Whenever it sees a paragraph outside its range of knowledge, it typically rates it poorly, even if the 
+        passage comes from other stories written by authors that it has seen before. Additionally, although the model
+        has been trained with gibberish as negative examples, it continues to rate some sequences of random characters
+        rather highly.
+    </p>
+</div>

@@ -17,6 +17,8 @@ import { AboutComponent } from './about/about.component';
 import { SimilarityComponent } from './projects/similarity/similarity.component';
 import { SimilaritydemoComponent } from './projects/similarity/similaritydemo/similaritydemo.component';
 import { GanComponent } from './projects/gan/gan.component';
+import { ParagraphraterComponent } from './projects/paragraphrater/paragraphrater.component';
+import { ParagraphraterdemoComponent } from './projects/paragraphrater/paragraphraterdemo/paragraphraterdemo.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { GanComponent } from './projects/gan/gan.component';
     AboutComponent,
     SimilarityComponent,
     SimilaritydemoComponent,
-    GanComponent
+    GanComponent,
+    ParagraphraterComponent,
+    ParagraphraterdemoComponent
   ],
   imports: [
     BrowserModule,
