@@ -19,6 +19,7 @@ import { SimilaritydemoComponent } from './projects/similarity/similaritydemo/si
 import { GanComponent } from './projects/gan/gan.component';
 import { ParagraphraterComponent } from './projects/paragraphrater/paragraphrater.component';
 import { ParagraphraterdemoComponent } from './projects/paragraphrater/paragraphraterdemo/paragraphraterdemo.component';
+import { WritingtoolComponent } from './projects/writingtool/writingtool.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ParagraphraterdemoComponent } from './projects/paragraphrater/paragraph
     SimilaritydemoComponent,
     GanComponent,
     ParagraphraterComponent,
-    ParagraphraterdemoComponent
+    ParagraphraterdemoComponent,
+    WritingtoolComponent
   ],
   imports: [
     BrowserModule,
