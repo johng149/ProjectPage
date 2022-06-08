@@ -6,7 +6,11 @@
             "image": "./assets/images/generic/tensorflow.jpg",
             "imagedesc": "Tensorflow Icon",
             "desc": "Using Huggingface ALBERT model and Tensorflow, along with datasets from sources such as Stanford NLP, this model determines the similarity of the meaning of two given English sentences. The training code uses Python.",
-            "tags": ["Tensorflow","Python","Huggingface"],
+            "tags": [
+                "Tensorflow",
+                "Python",
+                "Huggingface"
+            ],
             "route": "similarity"
         },
         {
@@ -15,17 +19,11 @@
             "image": "./assets/images/project/gan/featured.png",
             "imagedesc": "AI's Attempt At Drawing the Number 9",
             "desc": "Using Tensorflow, an AI model consisting of a discriminator and generator competed against each other. This process allowed the generator to create images that could trick the discriminator model.",
-            "tags": ["Tensorflow", "Python"],
+            "tags": [
+                "Tensorflow",
+                "Python"
+            ],
             "route": "gan"
-        },
-        {
-            "title": "Writing Tool",
-            "subtitle": "Helps writers maintain continuity and keep track of characters and events",
-            "image": "./assets/images/project/writingtool/text.jpg",
-            "imagedesc": "Cursive written script",
-            "desc": "Keeps track of event continuity in stories and their relationship to various characters. Uses Angular and Angular Material combined with data visualization libraries for the webpage and stores data using PostgreSQL",
-            "tags": ["Angular", "Angular Material","PostgreSQL","HTML"],
-            "route": "writingtool"
         },
         {
             "title": "Paragraph Rater",
@@ -33,7 +31,11 @@
             "image": "./assets/images/project/paragraphrater/oldbook.jpg",
             "imagedesc": "Some Old Book",
             "desc": "Huggingface ALBERT model trained using Tensorflow along with data from sources in public domain, such as Sherlock Holmes and Alice's Adventures in Wonderland. It uses randomly generated gibberish as negative examples.",
-            "tags": ["Tensorflow","Python","Huggingface"],
+            "tags": [
+                "Tensorflow",
+                "Python",
+                "Huggingface"
+            ],
             "route": "paragraphrater"
         }
     ]
